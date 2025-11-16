@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Shuleni - Intervention</title>
+  <!-- Link to your existing stylesheet -->
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>E-Shuleni Pilot 2025</h1>
+    <nav>
+      <!-- Navigation links -->
+      <a href="index.html">Dashboard</a>
+      <a href="assessments_enuma.html">Impact Analysis</a>
+      <a href="intervention.html" class="active">Intervention</a>
+    </nav>
+  </header>
+
+  <!-- Container for the new plots -->
+  <div class="content-container">
+    <h2>Intervention Help</h2>
+    <p>This section displays some key metrics of kids in Priority 0 in the current week.</p>
+  </div>
+
+  <div class="grid-container">
+    <iframe src="./plots/tracking_lessons_Grade 3_p0.html"></iframe>
+    <iframe src="./plots/tracking_lessons_Grade 4_p0.html"></iframe>
+  </div>
+
+    <div class="grid-container">
+    <iframe src="./plots/tracking_heatmap_Grade 3_p0.html"></iframe>
+    <iframe src="./plots/tracking_heatmap_Grade 4_p0.html"></iframe>
+  </div>
+
+  <footer>
+    <p>© Selfless Solutions</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shuleni Learning Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Flex container for first plot and image */
+        .top-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Space between iframe and image */
+            padding: 10px;
+        }
+
+        .top-container iframe {
+            width: 65%;
+            height: 300px;
+            border: none;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+            background-color: white;
+        }
+
+        .priority-image {
+            width: 30%; /* Adjust width to fit beside iframe */
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Grid container for two side-by-side plots */
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .grid-container iframe {
+            flex: 1;
+            min-width: 45%;
+            height: 500px;
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 900px) {
+            .top-container {
+                flex-direction: column;
+            }
+
+            .top-container iframe, .priority-image {
+                width: 80%;
+            }
+
+            .grid-container {
+                flex-direction: column;
+            }
+
+            .grid-container iframe {
+                width: 80%;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>E-Shuleni Pilot 2025: Learning Progress</h1>
+
+    <!-- Container for first plot and image -->
+    <div class="top-container">
+        <iframe src="./plots/student_performance_priority.html"></iframe>
+        <img src="./images/priority_groups.png" alt="Performance Priority Levels" class="priority-image">
+    </div>
+
+    <!-- Two side-by-side plots -->
+    <div class="grid-container">
+        <iframe src="./plots/tracking_levels_Grade 3.html"></iframe>
+        <iframe src="./plots/tracking_levels_Grade 4.html"></iframe>
+    </div>
+    <!-- Two side-by-side plots -->
+    <div class="grid-container">
+        <iframe src="./plots/tracking_perf_Grade 3.html"></iframe>
+        <iframe src="./plots/tracking_perf_Grade 4.html"></iframe>
+    </div>
+    <!-- Two side-by-side plots -->
+    <div class="grid-container">
+        <iframe src="./plots/tracking_lessons_Grade 3.html"></iframe>
+        <iframe src="./plots/tracking_lessons_Grade 4.html"></iframe>
+    </div>
+</body>
+</body>
+</html>

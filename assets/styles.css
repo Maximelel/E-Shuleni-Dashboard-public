@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #051c8f;
+  color: white;
+  padding: 1.5rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Navigation Bar */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #a2a41c;
+  text-decoration: none;
+}
+
+/* Top Container (for first plot and image) */
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.top-container iframe {
+  width: 65%;
+  height: 300px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.priority-image {
+  width: 30%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid Container for Plot Pairs */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.grid-container iframe {
+  flex: 1;
+  min-width: 45%;
+  height: 500px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Assessment Content */
+.content-container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.text-block {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.text-block h2 {
+  color: #051c8f;
+  margin-bottom: 0.5rem;
+}
+
+.iframe-block iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9em;
+  margin-top: 2rem;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 900px) {
+  .top-container {
+    flex-direction: column;
+  }
+
+  .top-container iframe,
+  .priority-image {
+    width: 80%;
+  }
+
+  .grid-container {
+    flex-direction: column;
+  }
+
+  .grid-container iframe {
+    width: 90%;
+    min-width: auto;
+  }
+}

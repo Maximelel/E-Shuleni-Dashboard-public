@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Shuleni Learning Progress</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  
+  <!-- === START: Minimal CSS for side-by-side layout === -->
+  <style>
+    .content-container {
+      max-width: 90%; /* Set the container to be 90% of the screen width */
+      margin: 0 auto; /* This keeps the container centered on the page */
+    }
+
+    .iframe-block {
+      display: flex; /* Use flexbox for layout */
+      flex-direction: row; /* This is the key change to enforce side-by-side layout */
+      gap: 20px;     /* Add some space between the plots */
+    }
+    .iframe-block iframe {
+      flex: 1;       /* Allow each plot to grow and take up equal space */
+      height: 500px; /* Give the plots a consistent height */
+      border: none;  /* Remove the default iframe border */
+    }
+  </style>
+  <!-- === END: Minimal CSS === -->
+
+</head>
+<body>
+  <header>
+    <h1>E-Shuleni Pilot 2025</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="assessments_enuma.html" class="active">Impact Analysis</a>
+      <a href="intervention.html">Intervention</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <section class="text-block">
+      <h2>Baseline Assessment</h2>
+      <p>
+        This section presents results from the baseline assessment of the E-Shuleni pilot program via the Enuma app.
+        <ul>
+          <li>Baseline: Jan 15 to Feb 10</li>
+          <li>Baseline 2: April 4</li>
+          <li>Baseline 3: May 28 to June 2</li>
+          <li>Baseline 4: September (coming...)</li>
+          <li>Endline: December (coming...)</li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- This section contains the single, full-width plot -->
+    <section class="iframe-block" style="margin-top: 40px;"> <!-- Added some margin for spacing -->
+      <iframe src="./plots/baseline_assessment_english_lineplots.html"></iframe>
+    </section>
+
+    <section class="text-block">
+      <h2>School English Exams</h2>
+      <p>
+        This section presents results from the school English exams conducted during the E-Shuleni pilot program at Singisi School.
+        <ul>
+          <li>Term 1: January - June</li>
+          <li>Term 2: July - December(coming...)</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="iframe-block" style="margin-top: 40px;"> <!-- Added some margin for spacing -->
+      <iframe src="./plots/grade3_singisi_scores.html"></iframe>
+    </section>
+
+    <section class="iframe-block" style="margin-top: 40px;"> <!-- Added some margin for spacing -->
+      <iframe src="./plots/grade4_singisi_scores.html"></iframe>
+    </section>
+
+    <section class="text-block">
+      <h2>MAC II English Proficiency Testing</h2>
+      <p>
+        This section presents results from MAC II English proficiency testing conducted during the E-Shuleni pilot program at Singisi School.
+        <ul>
+          <li>Baseline: January</li>
+          <li>Endline: December (coming...)</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="iframe-block" style="margin-top: 40px;"> <!-- Added some margin for spacing -->
+      <iframe src="./plots/mac2_results_grade3_grade4.html"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Selfless Solutions</p>
+  </footer>
+</body>
+</html>
