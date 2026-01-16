@@ -102,7 +102,6 @@ The notebooks expect the following data structure:
 ├── track performance/         # Excel files with student performance data
 ├── [Month]/                   # Monthly folders (e.g., October, November)
 │   └── progress_reports_[month]_[stream]_[date].pdf
-├── absenteeism table.xlsx     # Student attendance tracking
 └── students_out_of_program_2025.xlsx  # Students who left the program
 ```
 
@@ -112,7 +111,7 @@ The notebooks expect the following data structure:
 1. Export weekly PDF progress reports from Enuma LMS
 2. Run `pdf_automation_E-Shuleni.ipynb` to process the PDFs and generate priority metrics
 3. Export level tracking CSV files from Enuma LMS
-4. Update the absenteeism table if needed
+4. Update the table with out of school kids if needed
 5. Run `update_dashboard.ipynb` to generate comprehensive visualizations
 6. Review the generated HTML dashboards to monitor student progress
 7. Use intervention tables to plan student support
